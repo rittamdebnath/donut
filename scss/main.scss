@@ -1,5 +1,6 @@
 @import 'assests/color';
 @import 'assests/type';
+@import 'assests/mixins';
 html,
 body {
   width: 100%;
@@ -10,19 +11,50 @@ body {
 }
 body {
   font-family: 'Lato',sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 18px;
   line-height: 2;
   color: $wet-asphalt;
+  h1{
+    font-family:'Raleway',sans-serif;
+  }
 }
+
+
 .jumbotron {
   background: $wet-asphalt;
   background-size: cover;
   border-radius: 0;
   margin-bottom: 0;
   color: #fff;
+  .menu{
+    padding:0px 0;
+    a{
+      &.page-title{
+        color:#fff;
+        font-size:22px;
+        font-weight:300;
+      }
+    }
+    ul{
+      list-style: none;
+      li{
+        display: inline-block;
+        padding:0 20px;
+        a{
+          color:#fff;
+          text-decoration:none;
+          transition: all .2s ease-in-out;
+        }
+        a:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
   .title{
-    padding:250px 0;
+    padding:200px 0;
   }
   h1 {
     font-family: 'Raleway',sans-serif;
@@ -33,8 +65,22 @@ body {
     font-family: 'Lato',sans-serif;
     font-weight: 300;
   }
+  .title-invert{
+    color:#aaa;
+  }
+  img.tip{
+    margin-bottom:0;
+    padding:0px 0;
+    background-color: transparent;
+  }
 }
 
+section.feature{
+  h1{
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
 @media screen{
   header{
     height:100%;
@@ -43,4 +89,9 @@ body {
 //video
 .video-section .buttonBar {
   display: none;
+}
+
+
+.m-b-lg{
+  margin-bottom: 3rem !important;
 }

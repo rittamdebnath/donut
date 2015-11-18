@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=PT+Sans);
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,300);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,300,100,200,500);
-/* line 4, ../scss/main.scss */
+/* line 5, ../scss/main.scss */
 html,
 body {
   width: 100%;
@@ -12,16 +12,20 @@ body {
   overflow-x: hidden;
 }
 
-/* line 11, ../scss/main.scss */
+/* line 12, ../scss/main.scss */
 body {
   font-family: 'Lato',sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 18px;
   line-height: 2;
   color: #34495e;
 }
-
 /* line 18, ../scss/main.scss */
+body h1 {
+  font-family: 'Raleway',sans-serif;
+}
+
+/* line 24, ../scss/main.scss */
 .jumbotron {
   background: #34495e;
   background-size: cover;
@@ -29,29 +33,79 @@ body {
   margin-bottom: 0;
   color: #fff;
 }
-/* line 24, ../scss/main.scss */
-.jumbotron .title {
-  padding: 250px 0;
+/* line 30, ../scss/main.scss */
+.jumbotron .menu {
+  padding: 0px 0;
 }
-/* line 27, ../scss/main.scss */
+/* line 33, ../scss/main.scss */
+.jumbotron .menu a.page-title {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 300;
+}
+/* line 39, ../scss/main.scss */
+.jumbotron .menu ul {
+  list-style: none;
+}
+/* line 41, ../scss/main.scss */
+.jumbotron .menu ul li {
+  display: inline-block;
+  padding: 0 20px;
+}
+/* line 44, ../scss/main.scss */
+.jumbotron .menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+}
+/* line 49, ../scss/main.scss */
+.jumbotron .menu ul li a:hover {
+  text-decoration: underline;
+}
+/* line 56, ../scss/main.scss */
+.jumbotron .title {
+  padding: 200px 0;
+}
+/* line 59, ../scss/main.scss */
 .jumbotron h1 {
   font-family: 'Raleway',sans-serif;
   font-weight: 700;
   font-size: 80px;
 }
-/* line 32, ../scss/main.scss */
+/* line 64, ../scss/main.scss */
 .jumbotron p {
   font-family: 'Lato',sans-serif;
   font-weight: 300;
 }
+/* line 68, ../scss/main.scss */
+.jumbotron .title-invert {
+  color: #aaa;
+}
+/* line 71, ../scss/main.scss */
+.jumbotron img.tip {
+  margin-bottom: 0;
+  padding: 0px 0;
+  background-color: transparent;
+}
+
+/* line 79, ../scss/main.scss */
+section.feature h1 {
+  font-weight: 600;
+  text-transform: uppercase;
+}
 
 @media screen {
-  /* line 39, ../scss/main.scss */
+  /* line 85, ../scss/main.scss */
   header {
     height: 100%;
   }
 }
-/* line 44, ../scss/main.scss */
+/* line 90, ../scss/main.scss */
 .video-section .buttonBar {
   display: none;
+}
+
+/* line 95, ../scss/main.scss */
+.m-b-lg {
+  margin-bottom: 3rem !important;
 }
