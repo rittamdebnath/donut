@@ -13,9 +13,37 @@
       background: $background-color;
   }
 
-  // For Internet Explorer
-  body {
-    scrollbar-face-color: $foreground-color;
-    scrollbar-track-color: $background-color;
+  // // For Internet Explorer
+  // body {
+  //   scrollbar-face-color: $foreground-color;
+  //   scrollbar-track-color: $background-color;
+  // }
+}
+
+
+@mixin section-title ($color){
+  .title {
+    color:$color;
+    h1 {
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@mixin title-box ($color){
+  .title {
+    border: 1px solid $color;
+    background: transparent;
+    border-radius: 4px;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+    text-rendering: optimizeLegibility;
+  }
+}
+@mixin title-hover($bcolor,$tcolor) {
+  .title {
+    background-color: $bcolor;
+    color: $tcolor;
   }
 }

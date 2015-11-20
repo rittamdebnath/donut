@@ -20,12 +20,17 @@ body {
   line-height: 2;
   color: #34495e;
 }
-/* line 18, ../scss/main.scss */
-body h1 {
+/* line 23, ../scss/main.scss */
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
   font-family: 'Raleway',sans-serif;
 }
 
-/* line 24, ../scss/main.scss */
+/* line 27, ../scss/main.scss */
 .jumbotron {
   background: #34495e;
   background-size: cover;
@@ -33,99 +38,146 @@ body h1 {
   margin-bottom: 0;
   color: #fff;
 }
-/* line 30, ../scss/main.scss */
-.jumbotron .menu {
-  padding: 0px 0;
-}
 /* line 33, ../scss/main.scss */
+.jumbotron .menu {
+  padding: 0;
+}
+/* line 36, ../scss/main.scss */
 .jumbotron .menu a.page-title {
   color: #fff;
   font-size: 22px;
   font-weight: 300;
 }
-/* line 39, ../scss/main.scss */
+/* line 42, ../scss/main.scss */
 .jumbotron .menu ul {
   list-style: none;
 }
-/* line 41, ../scss/main.scss */
+/* line 44, ../scss/main.scss */
 .jumbotron .menu ul li {
   display: inline-block;
   padding: 0 20px;
 }
-/* line 44, ../scss/main.scss */
+/* line 47, ../scss/main.scss */
 .jumbotron .menu ul li a {
   color: #fff;
   text-decoration: none;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
-/* line 49, ../scss/main.scss */
+/* line 52, ../scss/main.scss */
 .jumbotron .menu ul li a:hover {
   text-decoration: underline;
 }
-/* line 56, ../scss/main.scss */
+/* line 58, ../scss/main.scss */
 .jumbotron .title {
   padding: 200px 0;
 }
-/* line 59, ../scss/main.scss */
+/* line 61, ../scss/main.scss */
 .jumbotron h1 {
   font-family: 'Raleway',sans-serif;
   font-weight: 700;
   font-size: 80px;
 }
-/* line 64, ../scss/main.scss */
+/* line 66, ../scss/main.scss */
 .jumbotron p {
   font-family: 'Lato',sans-serif;
   font-weight: 300;
 }
-/* line 68, ../scss/main.scss */
+/* line 70, ../scss/main.scss */
 .jumbotron .title-invert {
   color: #aaa;
 }
-/* line 71, ../scss/main.scss */
+/* line 73, ../scss/main.scss */
 .jumbotron img.tip {
   margin-bottom: 0;
-  padding: 0px 0;
+  padding: 0;
   background-color: transparent;
 }
 
-/* line 79, ../scss/main.scss */
+/* line 25, ../scss/assests/_mixins.scss */
 section.feature .title {
-  border: 1px solid #34495e;
-  border-radius: 4px;
-  padding: 10px 10px;
-  transition: all .3s ease-in-out;
-  text-rendering: optimizeLegibility;
+  color: #34495e;
 }
-/* line 85, ../scss/main.scss */
+/* line 27, ../scss/assests/_mixins.scss */
 section.feature .title h1 {
   font-weight: 600;
   text-transform: uppercase;
 }
-/* line 90, ../scss/main.scss */
+/* line 35, ../scss/assests/_mixins.scss */
+section.feature .title {
+  border: 1px solid #34495e;
+  background: transparent;
+  border-radius: 4px;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+  text-rendering: optimizeLegibility;
+}
+/* line 82, ../scss/main.scss */
 section.feature .card {
   padding-left: 0;
   padding-right: 0;
   margin: auto;
 }
 
-/* line 99, ../scss/main.scss */
+/* line 90, ../scss/main.scss */
 section.feature:hover .title {
-  background-color: #34495e;
   color: #fff;
+  background-color: #34495e;
+}
+
+/* line 95, ../scss/main.scss */
+section.aboutus {
+  background-color: #34495e;
+  padding: 60px 0;
+  margin: 0;
+  color: #fff;
+}
+/* line 25, ../scss/assests/_mixins.scss */
+section.aboutus .title {
+  color: white;
+}
+/* line 27, ../scss/assests/_mixins.scss */
+section.aboutus .title h1 {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+/* line 35, ../scss/assests/_mixins.scss */
+section.aboutus .title {
+  border: 1px solid white;
+  background: transparent;
+  border-radius: 4px;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+  text-rendering: optimizeLegibility;
+}
+/* line 102, ../scss/main.scss */
+section.aboutus .art-box {
+  border: 1px solid #fff;
+  background-color: transparent;
+  border-radius: 4px;
+}
+/* line 106, ../scss/main.scss */
+section.aboutus .art-box p {
+  padding: 80px;
+}
+
+/* line 45, ../scss/assests/_mixins.scss */
+section.aboutus:hover .title {
+  background-color: white;
+  color: #34495e;
 }
 
 @media screen {
-  /* line 105, ../scss/main.scss */
+  /* line 115, ../scss/main.scss */
   header {
     height: 100%;
   }
 }
-/* line 110, ../scss/main.scss */
+/* line 121, ../scss/main.scss */
 .video-section .buttonBar {
   display: none;
 }
 
-/* line 115, ../scss/main.scss */
+/* line 124, ../scss/main.scss */
 .m-b-lg, section.feature .card {
   margin-bottom: 3rem !important;
 }

@@ -15,46 +15,48 @@ body {
   font-size: 18px;
   line-height: 2;
   color: $wet-asphalt;
-  h1{
-    font-family:'Raleway',sans-serif;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Raleway',sans-serif;
   }
 }
-
-
 .jumbotron {
   background: $wet-asphalt;
   background-size: cover;
   border-radius: 0;
   margin-bottom: 0;
   color: #fff;
-  .menu{
-    padding:0px 0;
-    a{
-      &.page-title{
-        color:#fff;
-        font-size:22px;
-        font-weight:300;
+  .menu {
+    padding: 0;
+    a {
+      &.page-title {
+        color: #fff;
+        font-size: 22px;
+        font-weight: 300;
       }
     }
-    ul{
+    ul {
       list-style: none;
-      li{
+      li {
         display: inline-block;
-        padding:0 20px;
-        a{
-          color:#fff;
-          text-decoration:none;
-          transition: all .2s ease-in-out;
+        padding: 0 20px;
+        a {
+          color: #fff;
+          text-decoration: none;
+          transition: all 0.2s ease-in-out;
         }
-        a:hover{
+        a:hover {
           text-decoration: underline;
         }
       }
     }
   }
-
-  .title{
-    padding:200px 0;
+  .title {
+    padding: 200px 0;
   }
   h1 {
     font-family: 'Raleway',sans-serif;
@@ -65,53 +67,60 @@ body {
     font-family: 'Lato',sans-serif;
     font-weight: 300;
   }
-  .title-invert{
-    color:#aaa;
+  .title-invert {
+    color: #aaa;
   }
-  img.tip{
-    margin-bottom:0;
-    padding:0px 0;
+  img.tip {
+    margin-bottom: 0;
+    padding: 0;
     background-color: transparent;
   }
 }
-
-section.feature{
-  .title{
-    border:1px solid $wet-asphalt;
-    border-radius:4px;
-    padding:10px 10px;
-    transition: all .3s ease-in-out;
-    text-rendering: optimizeLegibility;
-    h1{
-      font-weight: 600;
-      text-transform: uppercase;
-    }
-  }
-  .card{
-    padding-left:0;
-    padding-right:0;
-    margin:auto;
+section.feature {
+  @include section-title($wet-asphalt);
+  @include title-box($wet-asphalt);
+  .card {
+    padding-left: 0;
+    padding-right: 0;
+    margin: auto;
     @extend .m-b-lg;
   }
 }
+section.feature:hover {
+  .title {
+    color: #fff;
+    background-color: $wet-asphalt;
+  }
+}
+section.aboutus {
+  background-color: $wet-asphalt;
+  padding: 60px 0;
+  margin: 0;
+  color:#fff;
+  @include section-title(#fff);
+  @include title-box(#fff);
+  .art-box{
+    border:1px solid #fff;
+    background-color: transparent;
+    border-radius: 4px;
+    p{
+      padding: 80px;
+    }
+  }
+}
+section.aboutus:hover {
+  @include title-hover(#fff,$wet-asphalt);
+}
+@media screen {
+  header {
+    height: 100%;
+  }
+}
 
-section.feature:hover{
-  .title{
-    background-color:$wet-asphalt;
-    color:#fff;
-  }
-}
-@media screen{
-  header{
-    height:100%;
-  }
-}
 //video
 .video-section .buttonBar {
   display: none;
 }
-
-
-.m-b-lg{
+.m-b-lg {
   margin-bottom: 3rem !important;
 }
