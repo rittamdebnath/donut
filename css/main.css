@@ -166,18 +166,39 @@ section.aboutus:hover .title {
   color: #34495e;
 }
 
+/* line 115, ../scss/main.scss */
+.foot {
+  background-color: #fff;
+  padding: 40px 0;
+}
+/* line 118, ../scss/main.scss */
+.foot .sm-caption {
+  font-weight: 400;
+  color: #aaa;
+  font-size: 16px;
+}
+/* line 123, ../scss/main.scss */
+.foot ul {
+  list-style-type: none;
+  line-height: 1.5;
+}
+/* line 126, ../scss/main.scss */
+.foot ul li {
+  margin-left: -40px;
+}
+
 @media screen {
-  /* line 115, ../scss/main.scss */
+  /* line 132, ../scss/main.scss */
   header {
     height: 100%;
   }
 }
-/* line 121, ../scss/main.scss */
+/* line 138, ../scss/main.scss */
 .video-section .buttonBar {
   display: none;
 }
 
-/* line 124, ../scss/main.scss */
+/* line 141, ../scss/main.scss */
 .m-b-lg, section.feature .card {
   margin-bottom: 3rem !important;
 }
