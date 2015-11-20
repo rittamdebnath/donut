@@ -89,23 +89,43 @@ body h1 {
 }
 
 /* line 79, ../scss/main.scss */
-section.feature h1 {
+section.feature .title {
+  border: 1px solid #34495e;
+  border-radius: 4px;
+  padding: 10px 10px;
+  transition: all .3s ease-in-out;
+  text-rendering: optimizeLegibility;
+}
+/* line 85, ../scss/main.scss */
+section.feature .title h1 {
   font-weight: 600;
   text-transform: uppercase;
 }
+/* line 90, ../scss/main.scss */
+section.feature .card {
+  padding-left: 0;
+  padding-right: 0;
+  margin: auto;
+}
+
+/* line 99, ../scss/main.scss */
+section.feature:hover .title {
+  background-color: #34495e;
+  color: #fff;
+}
 
 @media screen {
-  /* line 85, ../scss/main.scss */
+  /* line 105, ../scss/main.scss */
   header {
     height: 100%;
   }
 }
-/* line 90, ../scss/main.scss */
+/* line 110, ../scss/main.scss */
 .video-section .buttonBar {
   display: none;
 }
 
-/* line 95, ../scss/main.scss */
-.m-b-lg {
+/* line 115, ../scss/main.scss */
+.m-b-lg, section.feature .card {
   margin-bottom: 3rem !important;
 }

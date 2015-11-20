@@ -76,9 +76,29 @@ body {
 }
 
 section.feature{
-  h1{
-    font-weight: 600;
-    text-transform: uppercase;
+  .title{
+    border:1px solid $wet-asphalt;
+    border-radius:4px;
+    padding:10px 10px;
+    transition: all .3s ease-in-out;
+    text-rendering: optimizeLegibility;
+    h1{
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+  .card{
+    padding-left:0;
+    padding-right:0;
+    margin:auto;
+    @extend .m-b-lg;
+  }
+}
+
+section.feature:hover{
+  .title{
+    background-color:$wet-asphalt;
+    color:#fff;
   }
 }
 @media screen{
